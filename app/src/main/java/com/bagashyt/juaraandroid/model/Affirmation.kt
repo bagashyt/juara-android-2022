@@ -1,5 +1,11 @@
 package com.bagashyt.juaraandroid.model
 
-data class Affirmation(val stringResourceId: Int){
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Affirmation(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int
+) {
 
 }
